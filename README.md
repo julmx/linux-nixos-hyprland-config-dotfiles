@@ -68,7 +68,7 @@ The showcased images do not reflect the latest version of the system's appearanc
 | Bar                   | Waybar                      |
 | Notification          | Dunst                       |
 | Launcher              | Rofi-Wayland                |
-| Editor                | Helix                       |
+| Editor                | Neovim                       |
 | Terminal              | WezTerm + Starship          |
 | OSD                   | Avizo                       |
 | Night Gamma           | Gammastep                   |

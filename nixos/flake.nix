@@ -52,11 +52,11 @@
         ./programming-languages.nix
         ./lsp.nix
         #./rust.nix
-        ./wasm.nix
+        #./wasm.nix
         ./info-fetchers.nix
         ./utils.nix
         ./terminal-utils.nix
-        ./work.nix
+        #./work.nix
       ];
     };
   };

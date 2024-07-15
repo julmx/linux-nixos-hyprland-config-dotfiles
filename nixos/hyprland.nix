@@ -18,7 +18,7 @@
     cool-retro-term
 
     starship
-    helix
+    neovim
 
     qutebrowser
     zathura
