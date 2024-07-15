@@ -1,5 +1,5 @@
 {
-  description = "XNM's NixOS Configuration";
+  description = "julmx's NixOS Configuration";
 
   inputs = {
       nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -8,17 +8,17 @@
 
   outputs = { nixpkgs, ... } @ inputs:
   {
-    nixosConfigurations.isitreal-laptop = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.mainPC = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
         ./configuration.nix
         ./hardware-configuration.nix
-        # ./nvidia.nix
+        ./nvidia.nix
         # ./disable-nvidia.nix
         ./opengl.nix
         # ./fingerprint-scanner.nix
         # ./clamav-scanner.nix
-        ./yubikey.nix
+        #./yubikey.nix
         ./sound.nix
         ./usb.nix
         ./time.nix
@@ -27,7 +27,7 @@
         ./nix-settings.nix
         ./nixpkgs.nix
         ./gc.nix
-        # ./auto-upgrade.nix
+        ./auto-upgrade.nix
         ./linux-kernel.nix
         ./screen.nix
         ./display-manager.nix
@@ -44,14 +44,14 @@
         ./networking.nix
         # ./mac-randomize.nix
         # ./open-ssh.nix
-        ./firewall.nix
-        ./dns.nix
+        #./firewall.nix
+        #./dns.nix
         # ./vpn.nix
         ./users.nix
         ./virtualisation.nix
         ./programming-languages.nix
         ./lsp.nix
-        ./rust.nix
+        #./rust.nix
         ./wasm.nix
         ./info-fetchers.nix
         ./utils.nix

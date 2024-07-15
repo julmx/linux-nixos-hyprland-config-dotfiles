@@ -33,7 +33,7 @@
     nvidiaSettings = true;
 
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
-    package = config.boot.kernelPackages.nvidiaPackages.production;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
 
     # Nvidia Optimus PRIME. It is a technology developed by Nvidia to optimize
     # the power consumption and performance of laptops equipped with their GPUs.
@@ -42,7 +42,7 @@
     # and the discrete Nvidia GPU for performance-intensive tasks.
     prime = {
   		offload = {
-  			enable = true;
+  			enable = false;
   			enableOffloadCmd = true;
   		};
 
@@ -65,11 +65,11 @@
         prime.offload.enable = lib.mkForce false;
         prime.offload.enableOffloadCmd = lib.mkForce false;
 
-        prime.sync.enable = lib.mkForce true;
+        prime.sync.enable = lib.mkForce false;
         # Dynamic Boost. It is a technology found in NVIDIA Max-Q design laptops with RTX GPUs.
         # It intelligently and automatically shifts power between
         # the CPU and GPU in real-time based on the workload of your game or application.
-        dynamicBoost.enable = lib.mkForce true;
+        dynamicBoost.enable = lib.mkForce false;
       };
     };
   };
