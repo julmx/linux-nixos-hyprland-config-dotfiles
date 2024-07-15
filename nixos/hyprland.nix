@@ -21,6 +21,7 @@
     neovim
 
     qutebrowser
+    firefox
     zathura
     mpv
     imv
