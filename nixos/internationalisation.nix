@@ -31,6 +31,6 @@
     hyphen
     hunspell
     hunspellDicts.en_US
-    hunspellDicts.fr_FR
+    hunspellDicts.fr-moderne
   ];
 }

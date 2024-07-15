@@ -7,9 +7,10 @@
   };
 
   # Enable OpenGL
-  hardware.graphics = {
+  hardware.opengl = {
     enable = true;
-    enable32Bit = true;
+    driSupport32Bit = true;
+    driSupport = true;
     extraPackages = with pkgs; [
       intel-compute-runtime
       intel-media-driver    # LIBVA_DRIVER_NAME=iHD
