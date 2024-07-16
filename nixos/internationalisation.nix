@@ -3,7 +3,7 @@
 {
   # Select internationalisation properties.
   services.xserver = {
-    xkb.layout = "us,fr";
+    xkb.layout = "fr";
     xkb.variant = "bepo";
   };
   
