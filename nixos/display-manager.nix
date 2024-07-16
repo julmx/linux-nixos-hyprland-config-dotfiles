@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
-{
+{ 
+  console.keyMap = "fr-bepo";
   # Enable Display Manager
   services.greetd = {
     enable = true;
