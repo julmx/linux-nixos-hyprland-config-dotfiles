@@ -20,7 +20,7 @@ alias ngc14="sudo nix-collect-garbage --delete-older-than 14d"
 #   exec Hyprland
 # end
 
-set -gx EDITOR hx
+set -gx EDITOR nvim
 set -gx VOLUME_STEP 5
 set -gx BRIGHTNESS_STEP 5
 

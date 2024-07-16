@@ -44,8 +44,8 @@
 
     "clock#time": {
         "format": "{:%I:%M %p %Ez}",
-        // "locale": "en_US.UTF-8",
-        // "timezones": [ "Europe/Kyiv", "America/New_York" ],
+        // "locale": "fr_FR.UTF-8",
+        // "timezones": [ "Europe/Paris", "America/New_York" ],
     },
 
     "custom/separator": {
@@ -274,8 +274,7 @@
 
     "hyprland/language": {
         "format-en": "🇺🇸 ENG (US)",
-        "format-uk": "🇺🇦 UKR",
-        "format-ru": "🇷🇺 RUS",
+        "format-fr": "FR",
         "keyboard-name": "at-translated-set-2-keyboard",
         "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
     },
